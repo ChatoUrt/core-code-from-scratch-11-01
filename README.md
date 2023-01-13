@@ -11,7 +11,7 @@ function strCount(obj){
   for (let key in obj){
     value = obj[key];
     if (typeof value === 'string'){
-    count++;
+    count = count + 1;
     } else if (typeof value === 'object'){
     count = count + strCount(value);
     } 
